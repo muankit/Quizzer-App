@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".QuizStartingActivity">
+
+    <include
+        android:id="@+id/startQuizToolbar"
+        layout="@layout/start_quiz_toolbar_layout" />
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:id="@+id/subjectName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@+id/startQuizToolbar"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/totalQuestionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subjectName"
+        android:text="Total of 10 Questions" />
+
+    <TextView
+        android:text="You need at least 4 correct answer to pass."
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:textStyle="bold"
+        android:id="@+id/instructionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalQuestionTextView" />
+
+    <Button
+        android:id="@+id/continueQuizBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instructionTextView"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/quiz_start_button_background"
+        android:text="Continue"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/skipQuizBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:text="Skip Quiz"
+        android:textColor="#c2c2c2" />
+
+</RelativeLayout>

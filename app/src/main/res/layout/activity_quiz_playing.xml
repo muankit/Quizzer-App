@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QuizPlayingActivity">
+
+    <include
+        android:id="@+id/quizPlayingToolbar"
+        layout="@layout/play_quiz_toolbar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quizPlayingToolbar">
+
+        <LinearLayout
+            android:id="@+id/rootQueLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quizPlayingToolbar"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/questionTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/questionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="What is the molecular formula for carbon monooxide ?"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/questionTextColor"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/optionBtnLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/questionTextLayout"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/answerBtn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:background="@drawable/quiz_start_button_background"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="CO2"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/optionColor"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/answerBtn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:background="@drawable/quiz_start_button_background"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="CO"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/optionColor"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/answerBtn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:background="@drawable/quiz_start_button_background"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="CO4"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/optionColor"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/answerBtn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:background="@drawable/quiz_start_button_background"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="CO3"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/optionColor"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/clearNextOptionBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <Button
+                android:id="@+id/resetOptionBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/reset_ques_btn"
+                android:text="Reset"
+                android:textColor="@color/grey" />
+
+
+            <Button
+                android:id="@+id/nextBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/next_ques_btn"
+                android:text="Next"
+                android:textColor="@color/grey" />
+
+        </LinearLayout>
+
+        <!--<Button-->
+        <!--android:id="@+id/quitQuizBtn"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/clearNextOptionBtn"-->
+        <!--android:background="@drawable/quit_quiz_btn"-->
+        <!--android:text="Quit" />-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

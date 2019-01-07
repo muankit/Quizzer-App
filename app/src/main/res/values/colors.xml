@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#82e5fc</color>
+    <color name="colorAccent">#0277BD</color>
+    <color name="navigationBarColor">#BDBDBD</color>
+    <color name="grey">#525252</color>
+    <color name="darkGrey">#545454</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="black">#000000</color>
+    <color name="home_toolbar">#82e5fc</color>
+    <color name="green">#4CAF50</color>
+    <color name="buttonBack">#4FC3F7</color>
+    <color name="yellow">#FFC107</color>
+
+    <color name="optionBack">#C2C2C2</color>
+    <color name="selectedOption">#00E5FF</color>
+    <color name="optionColor">#818181</color>
+    <color name="questionTextColor">#616161</color>
+    <color name="nextQueBtn">#1DE9B6</color>
+    <color name="resetBtn">#00E5FF</color>
+    <color name="loginContinueBtn">#4FC3F7</color>
+
+    <!--colorPrimarydark  #aaf5fe   last blue light #4FC3F7 -->
+</resources>
